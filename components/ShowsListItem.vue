@@ -1,7 +1,7 @@
 <template>
   <nuxt-link
     :to="`/shows/${id}`"
-    class="relative snap-center group w-1/4 flex-none"
+    class="relative snap-center group w-1/3 xl:w-1/4 flex-none"
   >
     <div
       class="relative flex flex-col justify-between overflow-hidden transition-all aspect-[9/12] bg-neutral-100 rounded-xl hover:shadow-lg"
@@ -11,7 +11,7 @@
         class="absolute inset-0 group-hover:scale-125 duration-[7s] w-full h-full object-cover"
         :alt="`Movie poster of ${title}`"
       />
-      <div class="p-4 z-10">
+      <div class="p-3 xl:p-4 z-10">
         <AppButton
           size="small"
           icon="far fa-plus"
@@ -20,7 +20,7 @@
         />
       </div>
       <div
-        class="text-center p-4 bg-gradient-to-b from-black/0 to-black/70 text-white z-10 pt-4"
+        class="text-center p-2 xl:p-4 bg-gradient-to-b from-black/0 to-black/80 text-white z-10 pt-4"
       >
         <h3 class="font-semibold text-white mb-1">{{ title }}</h3>
         <div class="text-xs">

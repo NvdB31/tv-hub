@@ -1,13 +1,23 @@
 <template>
-  <nav class="w-60 border-r relative flex-none">
-    <div class="sticky top-0">
-      <div class="p-8">
+  <nav
+    class="w-60 border-r flex-none h-full xl:h-auto fixed z-20 bg-white xl:relative -translate-x-full xl:translate-x-0 transition-transform xl:transition-none shadow-lg xl:shadow-none"
+    :class="{ 'translate-x-0': showNavSidebar }"
+    :aria-hidden="!showNavSidebar"
+  >
+    <div class="xl:sticky top-0">
+      <nuxt-link to="/" class="p-8 hidden xl:block">
         <img
           src="/assets/images/tv-hub-logo.svg"
           class="h-10"
           alt="TV Hub Logo"
         />
-      </div>
+      </nuxt-link>
+      <button
+        @click="showNavSidebar = false"
+        class="h-6 w-6 block mt-4 ml-4 xl:hidden"
+      >
+        <i class="far fa-close" />
+      </button>
       <div v-for="group in navGroups" class="py-6 px-0">
         <div
           class="px-8 font-semibold mb-3 uppercase text-neutral-400 tracking-wide text-sm"
@@ -35,6 +45,7 @@
 </template>
 
 <script setup>
+const showNavSidebar = useState("showNavSidebar", () => false);
 const navGroups = [
   {
     label: "Menu",

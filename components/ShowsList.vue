@@ -1,9 +1,9 @@
 <template>
-  <section class="px-8 py-12 pb-0 w-full relative overflow-hidden">
-    <h2 class="text-xl xl:text-2xl font-semibold mb-2">{{ title }}</h2>
+  <section class="p-4 xl:px-8 xl:py-12 pb-0 w-full relative overflow-hidden">
+    <h2 class="text-xl xl:text-2xl font-semibold xl:mb-2">{{ title }}</h2>
     <div
       ref="list"
-      class="-mx-8 flex snap-x snap-mandatory scroll-px-8 gap-2 overflow-x-scroll px-8 md:gap-4 lg:gap-8 py-6"
+      class="-mx-8 flex snap-x snap-mandatory scroll-px-8 gap-2 overflow-x-scroll px-8 md:gap-4 xl:gap-8 py-3 xl:py-6"
     >
       <ShowsListItem
         v-for="show in shows"

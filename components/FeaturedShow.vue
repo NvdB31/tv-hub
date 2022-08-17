@@ -1,24 +1,24 @@
 <template>
-  <div class="p-12 pb-0">
+  <div class="p-4 xl:p-12 pb-0">
     <div
-      class="relative flex justify-between aspect-video rounded-2xl overflow-hidden"
+      class="relative flex flex-col xl:flex-row justify-between xl:aspect-video rounded-2xl xl:overflow-hidden"
     >
       <!-- Nice background by using the movie poster with a very large blur -->
       <div
-        class="absolute inset-0 bg-black h-full w-full flex items-center justify-center"
+        class="absolute inset-0 bg-black h-full w-full flex items-center justify-center overflow-hidden rounded-2xl"
       >
         <img
           :src="image"
-          alt=""
+          alt="Movie poster"
           class="h-full w-full scale-150 object-cover object-top blur-[50px]"
         />
       </div>
 
       <!-- Title, genres, summary and play buttons -->
       <div
-        class="w-4/5 p-8 2xl:p-16 flex flex-col justify-between h-full relative"
+        class="xl:w-4/5 p-6 xl:p-8 2xl:p-16 flex flex-col justify-between h-full relative"
       >
-        <div class="flex items-center text-sm">
+        <div class="flex items-center text-sm mb-6 xl:mb-0">
           <img
             src="https://i.pravatar.cc/150?img=1"
             class="w-6 h-6 -mr-2 rounded-full"
@@ -68,11 +68,11 @@
       </div>
 
       <!-- Movie poster -->
-      <div class="h-full w-3/5 z-10">
+      <div class="h-full w-3/5 z-10 overflow-hidden mx-auto p-4 pb-8 xl:p-0">
         <img
           :src="image"
           alt=""
-          class="h-full w-full object-cover object-bottom"
+          class="h-full w-full object-cover object-bottom rounded-xl xl:rounded-none"
         />
       </div>
     </div>

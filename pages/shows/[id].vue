@@ -1,7 +1,9 @@
 <template>
   <Main>
-    <div class="pt-12 px-12">
-      <nuxt-link to="/" class="hover:underline text-neutral-500"
+    <div class="pt-4 px-4 xl:pt-12 xl:px-12">
+      <nuxt-link
+        to="/"
+        class="hover:underline text-neutral-500 text-sm xl:text-base"
         ><i class="far fa-arrow-left-long mr-2" />Back to home</nuxt-link
       >
     </div>
@@ -13,7 +15,6 @@
       :image="currentShow.image?.original"
       :genres="currentShow.genres"
       :summary="currentShow.summary"
-      @add-to-favourites="addToFavourites(currentShow)"
       v-if="currentShow"
     />
     <CastSection
@@ -29,8 +30,6 @@
 </template>
 
 <script setup>
-import { addToFavourites } from "@/composables/useFavourites";
-
 const route = useRoute();
 const { showsByGenres } = await useShows();
 const currentShow = ref(null);
@@ -41,4 +40,12 @@ if (currentShow.value) {
   relevantShows.value =
     showsByGenres[currentShow.value.genres[0]?.toLowerCase()];
 }
+
+useHead({
+  title: `TV Hub – ${currentShow.value.name}`,
+  meta: [
+    { name: "og:image", content: currentShow.value?.image?.medium },
+    { name: "og:description", content: currentShow.value?.summary },
+  ],
+});
 </script>

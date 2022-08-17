@@ -28,4 +28,8 @@ const {
   featuredShow,
   showsCurrentlyWatching,
 } = await useShows();
+
+useHead({
+  title: "Discover the best TV shows",
+});
 </script>

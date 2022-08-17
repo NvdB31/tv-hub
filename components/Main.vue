@@ -1,5 +1,5 @@
 <template>
-  <main class="flex-grow main bg-neutral-100">
+  <main class="flex-grow main bg-neutral-100 w-full pt-14 md:pt-0">
     <Container class="bg-white 2xl:border-x">
       <slot />
     </Container>
@@ -7,7 +7,9 @@
 </template>
 
 <style scoped>
-.main {
-  max-width: calc(100vw - 35rem);
+@media screen and (min-width: 1280px) {
+  .main {
+    max-width: calc(100vw - 35rem);
+  }
 }
 </style>
