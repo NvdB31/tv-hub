@@ -4,17 +4,22 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview"
+    "preview": "nuxt preview",
+    "test": "vitest"
   },
   "devDependencies": {
+    "@nuxt/test-utils-edge": "^3.0.0-rc.8-27680175.faf00f5",
     "@tailwindcss/forms": "^0.5.2",
+    "@vitejs/plugin-vue": "^3.0.3",
+    "jest": "^28.1.3",
+    "jsdom": "^20.0.0",
     "nuxt": "3.0.0-rc.8",
     "postcss": "^8.4.16",
     "prettier-plugin-tailwindcss": "^0.1.13",
-    "tailwindcss": "^3.1.8"
+    "tailwindcss": "^3.1.8",
+    "vitest": "^0.22.1"
   },
   "dependencies": {
-    "@headlessui/vue": "^1.6.7",
     "lodash.debounce": "^4.0.8"
   }
 }

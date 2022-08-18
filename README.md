@@ -1,5 +1,7 @@
 # TV Hub
 
+**_ Live Demo: _** https://tv-hub.vercel.app/
+
 This is a demo site to demonstrate my software development capabilities.
 
 TV Hub is a Nuxt SSR-generated website that shows the most popular tv shows.
@@ -21,8 +23,6 @@ I've chosen to use Nuxt as a framework. Nuxt supports server-side-rendering (SSR
 ### Styling
 
 I've chosen to use Tailwind because it makes it easier for me to ensure consistent styling across the site. It forces me a developer to stay inside the safe bounds of theme-based style rules (such as spacing, colors etc.) Also, the fact that styling is co-located with the HTML makes it easier to update it, because I spend less time moving from markup to styling blocks. Finally, Tailwind also prevents me from having to spend time naming CSS classes. This is also very valuable when working with other colleagues because when everyone is forced to speak the common language this prevents the typical horror of blown-up, 300kb+ stylesheets that become un-maintainable over time.
-
-**_Bonus_** I took the freedom to experiment a little bit with adaptive-colors based on a blurred poster, in order to create an appealing effect that works well with different colors. (`FeaturedShow.vue`)
 
 ### API
 
