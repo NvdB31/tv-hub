@@ -35,7 +35,7 @@ I've used Nuxt's built-in `useState` composables. Since for this app, shared sta
 
 There's several things I did not do, for reasons of time and things I felt were out of scope for an assesment/demo:
 
-- Tests have been created for just 1 component and 1 unit (composable). Just to show ability to work with testing libs. For a real use-case, I'd of course aim for larger test coverage.
+- Tests have been created for just 1 unit (composable). Just to show my ability to work with testing libs. For a real use-case, I'd of course aim for larger test coverage.
 - Since the TV Maze API does not have any filtering options, I used rudimentary Array modifications to sort and categorise the TV shows, so that I was able to display them in interesting ways.
 - Responsiveness needs some optimisation, esp. for medium-sized screens.
 - I've rolled my own sidebar and modals for the nav and search. However, for real use-cases I'd either use a library like Tailwind UI, or spend more time on it to make sure they conform to a11y standards.
