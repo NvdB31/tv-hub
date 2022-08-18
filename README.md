@@ -1,6 +1,6 @@
 # TV Hub
 
-**_ Live Demo: _** https://tv-hub.vercel.app/
+**Live Demo**: https://tv-hub.vercel.app/
 
 This is a demo site to demonstrate my software development capabilities.
 
