@@ -13,8 +13,7 @@ Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 
 ## Process & Technical reasoning
 
-This site was built in about 9-hours, in two afternoons. I used a
-Below I've explained the reasoning behind several choices that were made.
+This site was built in about 9-hours, in two afternoons. Below I've explained the reasoning behind several choices that were made.
 
 ### Framework
 
