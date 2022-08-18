@@ -56,6 +56,16 @@ npm install
 pnpm install --shamefully-hoist
 ```
 
+## Testing
+
+```bash
+# yarn
+yarn test
+
+# npm
+npm test
+```
+
 ## Development Server
 
 Start the development server on http://localhost:3000

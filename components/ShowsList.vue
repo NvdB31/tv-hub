@@ -1,5 +1,5 @@
 <template>
-  <section class="p-4 xl:px-8 xl:py-12 pb-0 w-full relative overflow-hidden">
+  <section class="p-4 xl:p-8 pb-0 w-full relative overflow-hidden">
     <h2 class="text-xl xl:text-2xl font-semibold xl:mb-2">{{ title }}</h2>
     <div
       ref="list"

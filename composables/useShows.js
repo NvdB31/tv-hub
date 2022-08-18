@@ -4,7 +4,8 @@
  * @param {Array} - shows
  * @returns {Object} - Object with genre as keys, shows as Array value.
  */
-  export const categoriseShowsByGenres = (shows) => shows.reduce((genreMap, show) => {
+export const categoriseShowsByGenres = (shows) =>
+  shows.reduce((genreMap, show) => {
     const genres = show.genres;
     genres.forEach((genre) => {
       genre = genre.toLowerCase();
@@ -26,14 +27,14 @@ export default async () => {
     (a, b) => b.rating?.average - a.rating?.average
   );
 
-  const featuredShow = shows[0];
+  const featuredShow = shows[3];
   const trendingShows = shows.slice(0, 10);
   const showsCurrentlyWatching = [
     { ...shows[5], progress: 32 },
     { ...shows[12], progress: 12 },
   ];
 
-  const showsByGenres = categoriseShowsByGenres(shows)
+  const showsByGenres = categoriseShowsByGenres(shows);
 
   return {
     shows,

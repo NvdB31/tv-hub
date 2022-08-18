@@ -1,11 +1,11 @@
 <template>
-  <div class="p-4 xl:p-12 pb-0">
+  <div>
     <div
-      class="relative flex flex-col xl:flex-row justify-between xl:aspect-video rounded-2xl xl:overflow-hidden"
+      class="relative flex flex-col xl:flex-row justify-between xl:aspect-video xl:overflow-hidden"
     >
       <!-- Nice background by using the movie poster with a very large blur -->
       <div
-        class="absolute inset-0 bg-black h-full w-full flex items-center justify-center overflow-hidden rounded-2xl"
+        class="absolute inset-0 bg-black h-full w-full flex items-center justify-center overflow-hidden"
       >
         <img
           :src="image"

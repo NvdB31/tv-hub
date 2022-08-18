@@ -1,7 +1,7 @@
 <template>
   <nuxt-link
     :to="`/shows/${id}`"
-    class="relative snap-center group w-1/3 xl:w-1/4 flex-none"
+    class="relative snap-end group w-1/3 xl:w-1/4 flex-none"
   >
     <div
       class="relative flex flex-col justify-between overflow-hidden transition-all aspect-[9/12] bg-neutral-100 rounded-xl hover:shadow-lg"
