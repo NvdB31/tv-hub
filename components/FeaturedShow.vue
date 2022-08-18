@@ -31,9 +31,7 @@
             src="https://i.pravatar.cc/150?img=3"
             class="w-6 h-6 -mr-2 rounded-full"
           />
-          <div class="ml-4 text-black invert mix-blend-overlay">
-            +6 friends are watching this
-          </div>
+          <div class="ml-4 text-black/50">+6 friends are watching this</div>
         </div>
         <div>
           <h1
